@@ -1,0 +1,387 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height:100px;
+  background-color:#1B1B0D;
+}
+
+#logo {
+  width:200px;
+  height:70px;
+}
+
+.btn-group {
+  margin-left:500px;
+}
+
+.dropbtn {
+  background-color:#1B1B0D;
+  color:#F7F745;
+  margin-left:50px;
+  border-radius:10px;
+  width:120px;
+  height:50px;
+}
+
+.dropbtn:hover {
+  background-color:#4AAB24;
+}
+
+button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
+}
+
+#company-name {
+  display:flex;
+  background-image:url("https://cdn.glitch.global/6adfd3eb-c4db-4e86-84ea-38fb54f0ec9a/Serangreen%20Blog%20Banner.png?v=1722683689537");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  min-height:100vh;
+  align-items:center;
+  justify-content:center;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+#card-delivery {
+  color:white;
+  background-color:#1B1B0D;
+  position:absolute;
+  top:840px;
+  left:180px;
+}
+
+#card-save-money {
+  color:white;
+  background-color:#1B1B0D;
+  position:absolute;
+  top:840px;
+  left:500px;
+}
+
+#card-healthy {
+  color:white;
+  background-color:#1B1B0D;
+  position:absolute;
+  top:840px;
+  left:820px;
+}
+
+#card-contact {
+  color:white;
+  background-color:#1B1B0D;
+  position:absolute;
+  top:840px;
+  left:1140px;
+}
+
+.card {
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+  transition:0.3s;
+  border-radius:5px;
+}
+
+.card:hover {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding:2px 16px;
+}
+
+.card img {
+  border:1px solid #4AAB24;
+  border-radius:5px;
+  background-color:white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+#services-animation {
+  text-align:center;
+  font-family:'Roboto', sans-serif;
+  font-weight:300;
+  font-size:50px;
+  color:#1B1B0D;
+  padding-top:40vh;
+  height:100vh;
+  overflow:hidden;
+  position:absolute;
+  top:1050px;
+  left:29%;
+  font-weight:bold;
+  -webkit-backface-visibility:hidden;
+  -webkit-perspective:1000;
+  -webkit-transform:translate3d(0,0,0);
+  animation:showup 7s infinite;
+}
+
+#services-animation , #services-animation-hidden {
+  display:inline;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#services-animation-hidden {
+  font-size:50px;
+  color:#1B1B0D;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:#4AAB24;
+  margin-left:600px;
+  position:absolute;
+  top:1350px;
+  animation:reveal 7s infinite;
+}
+
+#services-animation-hidden span {
+  animation:slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-1500px;}
+    20% { margin-left:-1500px;}
+    35% { margin-left:0px;}
+    100% { margin-left:0px;}
+}
+
+@keyframes reveal {
+    0% {opacity:0; width:0px;}
+    20% {opacity:1; width:0px;}
+    30% {width:655px;}
+    80% {opacity:1;}
+    100% {opacity:0; width:655px;}
+}
+
+.services {
+  height:105vh;
+  position:relative;
+  background-color:#F7F745;
+  top:0px;
+  clip-path:polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.animate-charcter-about-us {
+  font-weight:800;
+  text-transform:uppercase;
+  background-image:linear-gradient(
+    -225deg,
+    #1B1B0D 0%,
+    #F7F745 36%,
+    #F7F745 73%,
+    #1B1B0D 100%
+  );
+  background-size:auto auto;
+  background-clip:border-box;
+  background-size:200% auto;
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:#1B1B0D;
+  animation:textclip 2s linear infinite;
+  display:inline-block;
+  font-size:48px;
+}
+
+.animate-charcter-products {
+  font-weight:800;
+  text-transform:uppercase;
+  background-image:linear-gradient(
+    -225deg,
+    #1B1B0D 0%,
+    #F7F745 36%,
+    #F7F745 73%,
+    #1B1B0D 100%
+  );
+  background-size:auto auto;
+  background-clip:border-box;
+  background-size:200% auto;
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:#1B1B0D;
+  animation:textclip 2s linear infinite;
+  display:inline-block;
+  font-size:48px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#about-us-section-heading {
+  position:absolute;
+  z-index:100;
+  top:1550px;
+  left:630px;
+}
+
+#about-description {
+  font-weight:bold;
+  font-size:20px;
+  position:absolute;
+  z-index:100;
+  top:1670px;
+  left:90px;
+}
+
+#about-see-more-button {
+  position:absolute;
+  top:330px;
+  left:130px;
+  z-index:100;
+  background-color:#1B1B0D;
+  color:#F7F745;
+  border-radius:10px;
+  width:150px;
+  height:40px;
+}
+
+#about-see-more-button:hover {
+  background-color:#4AAB24;
+}
+
+.products {
+  height:100vh;
+  background-color:#4AAB24;
+  position:relative;
+  top:500px;
+  clip-path:polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#products-section-heading {
+  position:absolute;
+  z-index:10000;
+  top:120px;
+  left:580px;
+}
+
+#our-products {
+  width:700px;
+  height:500px;
+  position:absolute;
+  top:200px;
+  left:420px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border: 5px solid black;
+}
+
+#footer {
+  width:100%;
+  position:absolute;
+  top:2760px;
+  left:0px;
+}
+
+.fa {
+  padding:18px;
+  font-size:30px;
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  text-align:center;
+  text-decoration:none;
+}
+
+.fa-facebook {
+  background:#3B5998;
+  color:white;
+}
+
+.fa-facebook:hover {
+  background:#1B1B0D;
+  color:white;
+}
+
+.fa-twitter {
+  background:#55ACEE;
+  color:white;
+}
+
+.fa-twitter:hover {
+  background:#1B1B0D;
+  color:white;
+}
+
+.fa-whatsapp {
+  background:#25D366;
+  color:white;
+}
+
+.fa-whatsapp:hover {
+  background:#1B1B0D;
+  color:white;
+}
+
+.fa-youtube {
+  background:#bb0000;
+  color:white;
+}
+
+.fa-youtube:hover {
+  background:#1B1B0D;
+  color:white;
+}
+
+
+
+
+
+
+
